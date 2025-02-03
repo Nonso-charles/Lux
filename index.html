@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="200"
+    height="50"
+    viewBox="0 0 300 100"
+>
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: darkgray; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00BFFF; stop-opacity:1" />
+        </linearGradient>
+        <style>
+            .text {
+                font-family: 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                font-size: 60px;
+                fill: url(#grad1);
+                filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+            }
+            .water-drop {
+                fill: #00BFFF;
+                filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+            }
+        </style>
+    </defs>
+    <text x="10" y="70" class="text">LUX</text>
+    <path
+
+    />
+</svg>
+
+
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+            <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradient for the menu toggle icon -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(0, 51, 102);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(0, 204, 255);stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Define shadow filter -->
+    <filter id="f1" x="0" y="0" width="150%" height="150%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="rgba(0, 0, 0, 0.3)" />
+    </filter>
+  </defs>
+
+  <!-- Menu icon (three horizontal lines) with gradient and shadow -->
+  <g filter="url(#f1)">
+    <rect x="4" y="5" width="16" height="2" fill="url(#grad1)" rx="1" />
+    <rect x="4" y="11" width="16" height="2" fill="url(#grad1)" rx="1" />
+    <rect x="4" y="17" width="16" height="2" fill="url(#grad1)" rx="1" />
+  </g>
+</svg>
+            
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <div class="close-btn" id="close-btn">
+<svg width="40" height="60" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradient for the close icon -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(0, 51, 102);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(0, 204, 255);stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Define shadow filter -->
+    <filter id="f1" x="0" y="0" width="150%" height="150%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="rgba(0, 0, 0, 0.3)" />
+    </filter>
+  </defs>
+
+  <!-- Close icon (X) with gradient and shadow -->
+  <g filter="url(#f1)">
+    <rect x="5" y="12" width="14" height="2" fill="url(#grad1)" rx="1" transform="rotate(45 12 12)" />
+    <rect x="5" y="12" width="14" height="2" fill="url(#grad1)" rx="1" transform="rotate(-45 12 12)" />
+  </g>
+</svg>
+
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+       <div class="hero-content">
+         <h1>Refresh Your Life with LUX</h1>
+  <p>Pure, premium hydration in every drop.</p>
+  
+  <a href="#shop" class="cta-button">Shop Now</a>
+       </div> 
+    </section>
+    
+    <section class="shop-section">
+        <h2>Shop With Us</h2>
+<div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+     <div class="products-grid">
+        <div class="product" data-name="Aqua Max" data-price="15000">
+        <div class="product-image">
+        <img src="assets/Aquamax.jpeg" alt="Aqua Max">
+    </div>
+  <h3>LUX AquaMax</h3>
+  <p>₦15,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Crystal Wave" data-price="22000">
+     <div class="product-image">
+        <img src="assets/Crystalwave.jpeg" alt="Crystal Wave">
+    </div>
+  <h3>LUX CrystalWave</h3>
+  <p>₦22,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Hydra Elite" data-price="30000">
+    <div class="product-image">
+        <img src="assets/Hydraelite.jpeg" alt="Hydra Elite">
+    </div>
+  <h3>LUX HydraElite</h3>
+  <p>₦30,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Pure Flow" data-price="19000">
+     <div class="product-image">
+        <img src="assets/Pureflow.jpeg" alt="Pure Flow">
+    </div>
+  <h3>LUX PureFlow</h3>
+  <p>₦19,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Vivid Blue" data-price="35000">
+        <div class="product-image">
+        <img src="assets/Vividblue.jpeg" alt="Vivid Blue">
+    </div>
+  <h3>LUX VividBlue</h3>
+  <p>₦35,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Ocean Tide" data-price="40000">
+        <div class="product-image">
+        <img src="assets/Oceantide.jpeg" alt="Ocean Tide">
+    </div>
+  <h3>LUX OceanTide</h3>
+  <p>₦40,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Ever Clear" data-price="22500">
+        <div class="product-image">
+        <img src="assets/Everclear.jpeg" alt="Ever Clear">
+    </div>
+  <h3>LUX EverClear</h3>
+  <p>₦22,500</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Summit Breeze" data-price="32900">
+    <div class="product-image">
+    <img src="assets/Summitbreeze.jpeg" alt="Summit Breeze">
+    </div>
+  <h3>LUX SummitBreeze</h3>
+  <p>₦32,900</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Serenity Flow" data-price="36000">
+    <div class="product-image">
+        <img src="assets/Serenityflow.jpeg" alt="Serenity Flow" class="flow">
+    </div>
+  <h3>LUX SerenityFlow</h3>
+  <p>₦36,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product" data-name="Zenith Pure" data-price="29000">
+     <div class="product-image">
+        <img src="assets/Zenithpure.jpeg" alt="Zenith Pure">
+    </div>
+  <h3>LUX ZenithPure</h3>
+  <p>₦29,000</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+     </div>
+     
+<div class="cart" id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> ₦<span id="cart-total">0</span></p>
+    <button id="checkout-btn">Checkout</button>
+    <button onclick="toggleCart()" class="close-cart">Close</button>
+</div>
+
+    </section>
+    
+    <div class="floating-icon" id="contactIcon">
+<img src="assets/message.jpeg" alt="Message Icon">
+    </div>
+    
+    <div class="contact-form" id="contactForm">
+        <form action="">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit" class="send-btn">Send</button>
+            <button type="button" class="close-form" id="closeForm">Close</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
