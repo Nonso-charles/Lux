@@ -105,3 +105,11 @@ document.getElementById('contactIcon').addEventListener('click', function() {
 document.getElementById('closeForm').addEventListener('click', function() {
     document.getElementById('contactForm').style.display = 'none';
 });
+
+// Pagination
+let currentSlide = 0;
+const initiatives = document.querySelectorAll('.initiative');
+
+function showSlides () {
+    initiatives.forEach((card, index) )
+}
