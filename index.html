@@ -100,14 +100,14 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Refresh Your Life with LUX</h1>
-      <p>Pure, premium hydration in every drop.</p>
+      <h1>Hydration, Engineered for You</h1>
+      <p>Durable, stylish, and leak-proof water bottles crafted for everyday lifestyle.</p>
 
       <a href="#shop" class="cta-button">Shop Now</a>
     </div>
   </section>
 
-  <section class="shop-section">
+  <section class="shop-section" id="shop">
     <h2>Shop With Us</h2>
     <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
     <div class="products-grid">
@@ -231,60 +231,125 @@
     </form>
   </div>
 
-  <section class="sustainability">
+  <section class="sustainability-section">
+    <h2 class="section-header">Sustainability at LUX</h2>
+    <p class="section-subtitle">At LUX we are committed to creating a positive impact in the environment. Our mission is
+      to provide high quality water bottles while minimizing our ecological footprint. Her's how we are making a
+      difference.</p>
+    <div class="slider">
+      <div class="card">
+        <img src="recycle.jpg" alt="">
+        <h3>Recyclable Materials</h3>
+        <p>All our bottles are made from 100% recyclable materials, ensuring that they can be reused and repurposed.</p>
+      </div>
+
+      <div class="card">
+        <img src="eco-friendly.jpg" alt="">
+        <h3>Eco-Friendly Production</h3>
+        <p>We utilise sustainable manufacturing process that reduces waste and energy consumption.</p>
+      </div>
+
+      <div class="card">
+        <img src="community.jpg" alt="">
+        <h3>Community Engagement</h3>
+        <p>We actively participate in community clean-up events and support local enviromental initiatives.</p>
+      </div>
+
+      <div class="card">
+        <img src="innovative.jpg" alt="">
+        <h3>Innovative Designs</h3>
+        <p>Our designs focuses on functionability and sustainability, ensuring a long lasting product.</p>
+      </div>
+    </div>
+
+    <!-- Pagination Line-->
+    <div class="pagination">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+      <span class="dot" onclick="changeSlide(3)"></span>
+    </div>
+  </section>
+
+  <section class="blog">
     <div class="container">
-      <h2>Sustainability at LUX</h2>
-      <p>At LUX, we are committed to creating a positive impact in the environment. Our mission is to provide high
-        quality water bottles while minimizing our ecological footprint. Here's how we are making a difference.</p>
-      <div class="sustainability-initiatives">
-        <div class="initiative">
-          <img src="recycle.jpg" alt="Recycle Image">
-          <div class="initiative-content">
-            <h3>Recyclable Materials</h3>
-            <p>All our bottles are made from 100% recyclable materials, ensuring that they can be reused and repurposed.
-            </p>
-          </div>
-
+      <h2>Latest Articles</h2>
+      <p>Stay updated with our latest news, tips, and insights on hydration and sustainability.</p>
+      <div class="blog-posts">
+        <div class="post-card">
+          <img
+            src="https://img.freepik.com/free-photo/mature-lady-training-summer-park-brunette-doing-yoga-old-woman-sports-clothes_1157-39694.jpg?t=st=1738691486~exp=1738695086~hmac=0ae46745bce160718f9bc3050cd14da1c7cc885809f4620795a7e8f6dc9340d4&w=1060"
+            alt="" class="post-image">
+          <h3>5 Benefits of Staying Hydrated</h3>
+          <p>Discover the importance of hydration and how it can improve your health and well-being.</p>
+          <a href="#" class="read-more">Read More</a>
         </div>
-        <div class="initiative">
-          <img src="eco-friendly.jpg" alt="">
-          <div class="initiative-content">
-            <h3>Eco-Friendly Production</h3>
-            <p>We utilise sustainable manufacturing process that reduces waste and energy consumption.</p>
-          </div>
 
+        <div class="post-card">
+          <img
+            src="https://img.freepik.com/free-photo/water-bottle-trunk-forest_53876-143014.jpg?t=st=1738691595~exp=1738695195~hmac=46c1a3bb800cee7efa49cccd4c5c62a1e9d526fb5727f9e76d0f06398d32c6e9&w=1060"
+            alt="" class="post-image">
+          <h3>Eco-Friendly practises for everyday lives</h3>
+          <p>Learn how to incorperate sustainable practice into your daily routine.</p>
+          <a href="#" class="read-more">Read More</a>
         </div>
-        <div class="initiative">
-          <img src="community.jpg" alt="">
-          <div class="initiative-content">
-            <h3>Community Engagement</h3>
-            <p>We actively participate in community clean-up events and support local environmental initiatives</p>
-          </div>
 
-          <div class="initiative">
-            <img src="innovative.jpg" alt="">
-            <div class="initiative-content">
-              <h3>Innovative Designs</h3>
-              <p>Our designs focus on functionality and sustainability, ensuring a long lasting product</p>
-            </div>
+        <div class="post-card">
+          <img
+            src="https://img.freepik.com/free-photo/young-fitness-girl-wearing-headband-holding-water-bottle-looking-it-with-smile-face-standing-blue-background_141793-118276.jpg?t=st=1738691696~exp=1738695296~hmac=38b74c302357c0085fe6ae721130045cf26550d1c1408342e714a7a0de386c1f&w=900"
+            alt="" class="post-image">
+          <h3>Choosing the Right Water Bottle for You</h3>
+          <p>Find out what to look for when selecting a water bottle that fits your Lifestyle.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
 
-          </div>
-          <div class="pagination">
-            <button class="prev" onclick="changeSlide(-1)"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1"
-                data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40">
-                <path
-                  d="M11,23.94L.89,14.13C.31,13.55,0,12.79,0,11.99,0,11.19,.31,10.43,.88,9.87h0S11,.06,11,.06V6.99h13v10H11v6.95ZM2.29,11.29c-.19,.19-.29,.44-.29,.71s.1,.52,.29,.71l6.71,6.51v-4.22h13v-6H9V4.79L2.29,11.29Z" />
-              </svg></button>
-
-            <button class="next" onclick="changeSlide(1)"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1"
-                data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40">
-                <path
-                  d="M13,23.94v-6.93H0V7.01H13V.06l10.11,9.82c.58,.58,.89,1.33,.89,2.13s-.31,1.56-.88,2.13h0s-10.11,9.8-10.11,9.8ZM2,15.01H15v4.21l6.71-6.5c.19-.19,.29-.44,.29-.71s-.1-.52-.29-.71l-6.71-6.51v4.22H2v6Z" />
-              </svg></button>
-          </div>
+        <div class="post-card">
+          <img
+            src="https://img.freepik.com/free-photo/fit-athlete-resting-drinking-water-after-exercises-stadium-afro-african-american-man-outdoor-city-fitness-health-lifestyle-concept_155003-23260.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid_sidr"
+            alt="" class="post-image">
+          <h3>Hydration Tips for Athletes</h3>
+          <p>Explore essential hydration tips to enhance your athletic performance.</p>
+          <a href="#" class="read-more">Read More</a>
         </div>
       </div>
+    </div>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="#">LUX</a>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@luxbottles.com">info@luxbottles.com</a></p>
+        <p>Phone: <a href="tel:+234 8034964803">+234 8034964803</a></p>
+      </div>
+      <div class="footer-socials">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">X</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LUX Water Bottles. All Rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

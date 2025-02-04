@@ -92,6 +92,7 @@ a {
   display: block;
   position: relative;
   transition: color 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 
 /* Hover Animation */
@@ -136,7 +137,7 @@ a {
 
 /* Hero section */
 .hero {
-  background: url("hero.gif");
+  background: url("https://img.freepik.com/free-photo/close-up-beauty-nail-art_23-2149249955.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid_sidr");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -152,7 +153,7 @@ a {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  color: darkgray;
+  color: #fff;
 }
 
 .hero-content h1 {
@@ -167,9 +168,9 @@ a {
 .cta-button {
   padding: 0.8rem 1.5rem;
   text-decoration: none;
-  color: darkgray;
+  color: #fff;
   background: transparent;
-  border: 1px solid darkgray;
+  border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -288,7 +289,7 @@ a {
   right: -320px;
   width: 320px;
   height: 100%;
-  background: url("assets/cart-bg.jpeg");
+  background: url("cart-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -423,9 +424,91 @@ a {
 }
 
 /* Sustainability section */
-.sustainability {
+.sustainability-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin: 1rem 0;
+  color: #a9a9a9;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-top: 1rem;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 6rem;
+  left: 1.3rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.card p {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  color: white;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.4rem 0.8rem;
+}
+
+/* Pagination Line */
+.pagination {
+  margin-top: 1.2rem;
+}
+
+.dot {
+  height: 0.8rem;
+  width: 0.8rem;
+  background: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+}
+
+.dot.active {
+  background: black;
+}
+
+/* Blog section */
+.blog {
   background: #f0f8ff;
-  padding: 4rem 2rem;
+  padding: 5rem 0;
   text-align: center;
 }
 
@@ -436,79 +519,133 @@ a {
 
 .container h2 {
   font-size: 2.5rem;
-  color: #a9a9a9;
-  margin-bottom: 1.2rem;
+  color: #007bff;
+  margin-bottom: 0.8rem;
 }
 
 .container p {
   font-size: 1.2rem;
   color: #333;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.sustainability-initiatives {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  max-width: 600px;
+  width: 100%;
 }
 
-.initiative {
+.post-card {
   background: white;
   border-radius: 0.8rem;
-  position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.1rem;
+  padding: 20px;
   margin: 0.8rem;
-  width: 250px;
   transition: transform 0.3s;
 }
 
-.initiative:hover {
+.post-card:hover {
   transform: translateY(-5px);
 }
 
-.initiative img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
 }
 
-.initiative h3 {
+.post-card h3 {
   font-size: 1.5rem;
   color: #007bff;
-  margin-bottom: 0.8rem;
+  margin: 0.9rem 0 0.8rem;
 }
 
-.initiative p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.initiative-content {
-  position: absolute;
-  left: 5%;
-  bottom: 5%;
-}
-
-.pagination {
-  display: none;
-  margin-top: 1.2px;
-}
-
-.prev,
-.next {
+.read-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.8rem 1rem;
   background: #007bff;
   color: white;
+  text-decoration: none;
   border: none;
-  padding: 0.8rem 1, 3rem;
-  cursor: pointer;
   border-radius: 5px;
-  margin: 0 0.8rem;
+  transition: background-color 0.3s;
 }
 
-.prev:hover,
-.next:hover {
+.read-more:hover {
   background: #0056b3;
+}
+
+/* Footer section */
+.footer {
+  padding: 4rem 0;
+  background: #007bff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links,
+.footer-contact,
+.footer-socials {
+  flex: 1;
+  margin: 0.8rem;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-socials h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+  margin: 0.3rem 0;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  margin-top: 1.3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0.8rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 /* Responsive Styles */
@@ -556,18 +693,49 @@ a {
     height: 150px;
   }
 
-  .sustainability-initiatives {
+  .slider {
+    display: flex;
+    overflow: hidden;
+    width: 250px;
+    margin: 0.8rem auto;
+  }
+
+  .dot {
+    display: inline-block;
+  }
+
+  .card {
     display: none;
   }
 
-  .pagination {
-    display: flex;
-    justify-content: center;
+  .card.active {
+    display: block;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  .blog-posts {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links,
+  .footer-contact,
+  .footer-socials {
+    text-align: center;
   }
 }
 
-@media (max-width: 769px) {
-  .pagination {
-    display: none;
+@media (max-width: 480px) {
+  .blog-posts {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }

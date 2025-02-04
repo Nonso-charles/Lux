@@ -106,10 +106,22 @@ document.getElementById('closeForm').addEventListener('click', function() {
     document.getElementById('contactForm').style.display = 'none';
 });
 
-// Pagination
-let currentSlide = 0;
-const initiatives = document.querySelectorAll('.initiative');
 
-function showSlides () {
-    initiatives.forEach((card, index) )
+// javascript for Pagination Slider
+let currentSlide = 0;
+const cards = document.querySelectorAll('.card');
+const dots = document.querySelectorAll('.dot');
+
+// Function to Change Slide
+function changeSlide(index) {
+    cards.forEach((cards, i) => {
+        cards.classList.remove('active');
+        dots[i].classList.remove('active');
+    });
+
+    cards[index].classList.add('active');
+    dots[index].classList.add('active');
 }
+
+// Initialise first slide
+changeSlide(currentSlide);
